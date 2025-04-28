@@ -25,6 +25,9 @@
         <h1>play页面dome</h1>
         <el-button type="primary" @click="$router.push('/featureCards')">featureCards</el-button>
         <el-button type="primary" @click="$router.push('/imageGuide')">imageGuide</el-button>
+        <el-button type="primary" @click="$router.push('/loopPlayback')">loopPlayback</el-button>
+        <el-button type="primary" @click="$router.push('/loopVideo')">loopVideo</el-button>
+        <el-button type="primary" @click="$router.push('/imgAnimation')">imgAnimation</el-button>
       </el-card>
     </div>
   </div>

@@ -89,6 +89,21 @@ const router = createRouter({
           path: '/imageGuide',
           name: 'imageGuide',
           component: () => import('@/views/play/imageGuide.vue')
+        },
+        {
+          path: '/loopPlayback',
+          name: 'loopPlayback',
+          component: () => import('@/views/play/loopPlayback.vue')
+        },
+        {
+          path: '/loopVideo',
+          name: 'loopVideo',
+          component: () => import('@/views/play/loopVideo.vue')
+        },
+        {
+          path: '/imgAnimation',
+          name: 'imgAnimation',
+          component: () => import('@/views/play/imgAnimation.vue')
         }
       ]
     }
