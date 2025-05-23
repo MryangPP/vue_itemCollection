@@ -6,7 +6,7 @@
       :src="img"
       class="animated-logo"
       :style="{
-        'animation-delay': `${index * 1.5}s`,
+        'animation-delay': `${index * 1}s`,
         'animation-play-state': isAnimating ? 'running' : 'paused'
       }"
       @animationend="handleAnimationEnd(index)"
@@ -16,9 +16,13 @@
 
 <script setup>
 import { ref, onMounted, nextTick } from 'vue'
+onMounted(async () => {
+  await loadImages()
+  await nextTick()
+})
+// 品牌logo循环动画
 const isAnimating = ref(true)
 const container = ref(null)
-// 图片数据（示例）
 const images = ref([])
 const imageModules = import.meta.glob('@/assets/icon/img_*.jpg')
 async function loadImages() {
@@ -31,14 +35,8 @@ async function loadImages() {
   )
   images.value = imagePaths
 }
-onMounted(async () => {
-  await loadImages()
-  await nextTick()
-})
 // 动画结束时处理
 const handleAnimationEnd = index => {
-  //   console.log(index, 111)
-  //   console.log(images.value.length, 222)
   if (index === images.value.length - 1) {
     // 最后一个动画结束时，重置所有图片位置
     isAnimating.value = false

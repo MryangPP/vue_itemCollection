@@ -135,7 +135,6 @@ function setupInfiniteScroll() {
   height: 42vw;
   border: 2px solid #333;
   overflow: hidden;
-  background: #f0f0f0;
 }
 /* 新增transform-origin */
 .scrolling-image {
@@ -143,10 +142,8 @@ function setupInfiniteScroll() {
   opacity: 0; /* 初始透明度 */
 }
 .imagesBox img {
-  /* width: 200px; */
-  width: auto;
-  height: 40px;
-  margin: 80px 0;
+  width: 200px;
+  margin: 60px 0;
 }
 .imagesBox {
   position: absolute;
@@ -155,5 +152,6 @@ function setupInfiniteScroll() {
   align-items: center;
   bottom: 0;
   width: 100%;
+  margin-bottom: 60px;
 }
 </style>

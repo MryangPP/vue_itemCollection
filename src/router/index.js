@@ -104,6 +104,26 @@ const router = createRouter({
           path: '/imgAnimation',
           name: 'imgAnimation',
           component: () => import('@/views/play/imgAnimation.vue')
+        },
+        {
+          path: '/selectColor',
+          name: 'selectColor',
+          component: () => import('@/views/play/selectColor.vue')
+        },
+        {
+          path: '/EatingSnakes',
+          name: 'EatingSnakes',
+          component: () => import('@/views/game/EatingSnakes.vue')
+        },
+        {
+          path: '/Mineclearance',
+          name: 'Mineclearance',
+          component: () => import('@/views/game/Mineclearance.vue')
+        },
+        {
+          path: '/tetris',
+          name: 'tetris',
+          component: () => import('@/views/game/tetris.vue')
         }
       ]
     }

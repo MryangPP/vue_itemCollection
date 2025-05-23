@@ -28,6 +28,13 @@
         <el-button type="primary" @click="$router.push('/loopPlayback')">loopPlayback</el-button>
         <el-button type="primary" @click="$router.push('/loopVideo')">loopVideo</el-button>
         <el-button type="primary" @click="$router.push('/imgAnimation')">imgAnimation</el-button>
+        <el-button type="primary" @click="$router.push('/selectColor')">selectColor</el-button>
+      </el-card>
+      <el-card>
+        <h1>小游戏dome</h1>
+        <el-button type="primary" @click="$router.push('/EatingSnakes')">EatingSnakes</el-button>
+        <el-button type="primary" @click="$router.push('/Mineclearance')">Mineclearance</el-button>
+        <el-button type="primary" @click="$router.push('/tetris')">tetris</el-button>
       </el-card>
     </div>
   </div>
